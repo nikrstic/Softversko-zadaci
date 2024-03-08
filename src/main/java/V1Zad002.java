@@ -4,11 +4,11 @@ import java.util.NoSuchElementException;
 
 public class V1Zad002 {
     public static class Niz<T>{
-        private ArrayList<T> lista;
+            private final ArrayList<T> lista;
         public Niz(int n){
             lista=new ArrayList<T>();
         }
-        public int lenght(){
+        public int length(){
             return lista.size();
         }
         public T at(int index){
@@ -17,6 +17,10 @@ public class V1Zad002 {
         public void add(T novi){
             lista.add(novi);
         }
+
+
+
+
         class MyIterator implements Iterator<T> {
             int index;
             MyIterator(){
@@ -47,7 +51,7 @@ public class V1Zad002 {
         for(int i=0;i<10;i++){
             niz.add(i);
         }
-        System.out.println(niz.lenght());
+        System.out.println(niz.length());
         Iterator<Integer> it = niz.lista.iterator();
         while(it.hasNext())
             System.out.println(it.next());
