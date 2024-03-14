@@ -39,6 +39,9 @@ public class V1Zad005 {
             public boolean hasNext() {
                 return indexN1 < n1.length() || indexN2 < n2.length();
             }
+            public Iterator<T> iterator() {
+                return new MyIterator();
+            }
         }
     }
 

@@ -4,7 +4,7 @@ import java.util.NoSuchElementException;
 
 public class V1Zad002 {
     public static class Niz<T>{
-            private final ArrayList<T> lista;
+        private final ArrayList<T> lista;
         public Niz(int n){
             lista=new ArrayList<T>();
         }
